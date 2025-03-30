@@ -1,7 +1,8 @@
-<div class="flex justify-between items-start gap-4">
+<div class="flex justify-between items-center gap-4 h-full">
   <app-logo></app-logo>
-  <div class="flex justify-between flex-1 items-start">
+  <button class="md:hidden p-2" id="burger-btn">☰</button>
+  <div class="hidden md:flex justify-between flex-1 items-start">
     <app-navbar class="flex flex-1 justify-center"></app-navbar>
   </div>
-  <a class="link cursor-pointer" routerLink="auth">sign in</a>
+  <a class="hidden md:block link cursor-pointer" routerLink="auth">sign in</a>
 </div>
